@@ -62,7 +62,7 @@ github-profile-analyzer-api/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/github-profile-analyzer-api.git
+git clone git clone https://github.com/black18berry/GitHub-Profile-Analyzer-API.git
 cd github-profile-analyzer-api
 ```
 
