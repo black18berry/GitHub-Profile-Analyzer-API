@@ -1,0 +1,133 @@
+{
+  "info": {
+    "_postman_id": "6b551d97-efe4-4271-8b4d-aaf8292308de",
+    "name": "GitHub Profile Analyzer API",
+    "description": "Postman collection for the live GitHub Profile Analyzer API deployed on Render.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://github-profile-analyzer-api-w0u9.onrender.com/api/health",
+          "protocol": "https",
+          "host": [
+            "github-profile-analyzer-api-w0u9",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "health"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Analyze Profile - Octocat",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://github-profile-analyzer-api-w0u9.onrender.com/api/profiles/analyze/octocat",
+          "protocol": "https",
+          "host": [
+            "github-profile-analyzer-api-w0u9",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "profiles",
+            "analyze",
+            "octocat"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Profiles - Search and Pagination",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://github-profile-analyzer-api-w0u9.onrender.com/api/profiles?page=1&limit=10&search=octo",
+          "protocol": "https",
+          "host": [
+            "github-profile-analyzer-api-w0u9",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "profiles"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            },
+            {
+              "key": "search",
+              "value": "octo"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Single Profile - Octocat",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://github-profile-analyzer-api-w0u9.onrender.com/api/profiles/octocat",
+          "protocol": "https",
+          "host": [
+            "github-profile-analyzer-api-w0u9",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "profiles",
+            "octocat"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Profile - Octocat",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://github-profile-analyzer-api-w0u9.onrender.com/api/profiles/octocat",
+          "protocol": "https",
+          "host": [
+            "github-profile-analyzer-api-w0u9",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "profiles",
+            "octocat"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
