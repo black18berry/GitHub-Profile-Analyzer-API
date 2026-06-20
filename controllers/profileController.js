@@ -240,13 +240,13 @@ const getAllProfiles = async (req, res, next) => {
     const totalProfiles = countResult[0].total;
     const totalPages = Math.ceil(totalProfiles / limit);
 
-    const [profiles] = await pool.execute(
+    const [profiles] = await pool.query(
       `SELECT *
        FROM github_profiles
        WHERE username LIKE ? OR name LIKE ?
        ORDER BY analyzed_at DESC
-       LIMIT ? OFFSET ?`,
-      [searchValue, searchValue, limit, offset]
+       LIMIT ${limit} OFFSET ${offset}`,
+      [searchValue, searchValue]
     );
 
     res.status(200).json({
